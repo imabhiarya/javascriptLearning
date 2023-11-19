@@ -90,3 +90,54 @@ console.log(sumEvenNumbers(arr));
  }
  let strArr = ["Abhishek" , "Kumar", "Arya", "HariomSharan", "Shekhar"]
  console.log(stringLenGreaterThanFive(strArr));
+
+//  Q8. Write a function that takes an object and returns an array of all the keys in the object.
+
+function ArrayOfKeys(object) {
+    let newArr =[];
+    for (const key in object) {
+        newArr.push(key);
+    }
+return newArr;
+}
+let myObj ={
+    car : "Volvo",
+    name : "Abhishek",
+    age : 22,
+    location : "Greater Noida"
+}
+console.log(ArrayOfKeys(myObj));
+console.log("Now Q9");
+
+// Q9 Write a function that takes an array of objects and returns an array of all the values of a specified property name.
+
+function ArrayofValueOfObj(obj) {
+    let newArr = Object.values(obj)
+    return newArr;
+}
+
+console.log(ArrayofValueOfObj(myObj));
+console.log("Q.No. 10");
+
+// Q 10 Write a function that takes an array of objects and returns the object with the highest value for a specified property name.
+
+function maxByProperty(arr, prop) {
+    if (arr.length == 0) {
+        return null;
+    }
+    let maxObj = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+       if (arr[i][prop]>maxObj[prop]) {
+        maxObj = arr[i];
+       }
+        
+    }
+    return maxObj;
+}
+
+let myarr2 = [
+    {name:"apple", price: 1 },
+    {name: "orange", price: 2},
+    {name : "banana", price : 3},
+];
+console.log(maxByProperty(myarr2,"price"));
