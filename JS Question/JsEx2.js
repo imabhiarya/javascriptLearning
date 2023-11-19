@@ -74,3 +74,19 @@ console.log(sumEvenNumbers(arr));
 
  let arr3 =  [3,5,6,8,9];
  console.log(sumOfArray(arr3));
+
+ //  Q7. Write a function that takes an array of strings as an argument and returns a new array with only the strings that have a length greater than 5.
+ function stringLenGreaterThanFive(params) {
+    let newArray = [];
+    // let count = 0;
+    for (let i = 0; i < params.length; i++) {
+        if (params[i].length > 5) {
+            // newArray[count] = params[i];
+            // count++;                             this works as same
+            newArray.push(params[i]);
+        }
+    }
+    return newArray;
+ }
+ let strArr = ["Abhishek" , "Kumar", "Arya", "HariomSharan", "Shekhar"]
+ console.log(stringLenGreaterThanFive(strArr));
