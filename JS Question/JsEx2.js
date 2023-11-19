@@ -61,3 +61,16 @@ function sumEvenNumbers(arr) {
 }
 let arr = [1, 2, 3, 4, 5];
 console.log(sumEvenNumbers(arr));
+
+// Q6. Write a function that takes an array of numbers as an argument and returns the sum of all the numbers in the array.
+
+ function sumOfArray(params) {
+    let sum = 0;
+    for (let i = 0; i < params.length; i++) {
+        sum += params[i]
+    }
+    return sum;
+ }
+
+ let arr3 =  [3,5,6,8,9];
+ console.log(sumOfArray(arr3));
