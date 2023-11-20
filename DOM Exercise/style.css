@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(192, 162, 162);
+}
+.fhclass{
+    color: red;
+    background-color: aquamarine;
+    cursor: pointer;
+}
