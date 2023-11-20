@@ -9,7 +9,17 @@ function addCssClass(id1,clname) {
         elm.classList.add(clname)
     });
 }
-addCssClass("firstBtn","fhclass")
+
+addCssClass("fh1","fhclass")
+
+function removeCssClassOnScroll(idname,clname) {
+    let element = document.getElementById(idname);
+    element.addEventListener('mouseout', () => {
+        element.classList.remove(clname);
+    });
+};
+
+removeCssClassOnScroll("fh1","fhclass")
 
 
   
