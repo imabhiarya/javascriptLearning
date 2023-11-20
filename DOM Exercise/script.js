@@ -21,5 +21,16 @@ function removeCssClassOnScroll(idname,clname) {
 
 removeCssClassOnScroll("fh1","fhclass")
 
+function toogleThis(idname) {
+    let element = document.getElementById(idname);
+    element.addEventListener('click',()=>{
+        element.style.visibility = "hidden"
+    })
+    element.addEventListener('mouseout', ()=>{
+        element.style.visibility = "visible"
+    })
+}
+toogleThis("toogleDiv");
+
 
   
